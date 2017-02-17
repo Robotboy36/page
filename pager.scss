@@ -1,0 +1,186 @@
+
+$themeColor: #27A9E3;
+
+.pager {
+	height: 30px;
+	padding: 10px;
+	line-height: 30px;
+
+  	.pager-info {
+	  	float: left;
+	}
+	
+	.pager-jump{
+	    display: inline-block;
+        line-height: 30px;
+        
+        input,
+        button{
+            outline: none;
+        }
+        	    
+	    input{
+	        width: 40px;
+	        padding: 0;
+            height: 28px;
+	        text-align: center;
+            background: #fff;
+            border: 1px solid #ddd;
+	    }	
+	    
+	    button{
+	        border: none;
+            height: 30px;
+	        background: $themeColor;
+	        color: #fff;
+	        cursor: pointer;
+	        margin-left: 5px;
+	    }    
+	}
+
+	&-index-tip{
+		margin-right: 20px;
+	}
+
+	.pager-list,
+	.pager-next,
+	.pager-prev {
+	  	float: right;
+	}
+
+	.pager-list {
+	  	width: 520px;
+
+	  	ul {
+			margin-left: 5px;
+			float: right;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			padding-left: 5px;
+
+			&:after {
+			  	content: "";
+			  	clear: both;
+			  	width: 100%;
+			  	display: block;
+			}
+		}
+
+		li,
+		.pager-next,
+		.pager-prev {
+		    width: 80px;
+		    height: 32px;
+		    line-height: 32px;
+		    border: 1px solid #ddd;
+		    cursor: pointer;
+		    text-align: center;
+		    box-sizing: border-box;
+
+		    &:hover {
+			    border-color: $themeColor;
+			    color: $themeColor;
+			}
+
+			&:active {
+			    background: #fafafa;
+			}
+		}
+
+		.pager-next,
+		.pager-prev {
+			&.disabled:active{
+				background: #eee;
+			}
+		}
+
+
+		li {
+		    float: left;
+		    margin-right: 5px;
+		    width: 32px;
+		    position: relative;
+
+			&.disabled:active{
+				background: none;
+			}
+		}
+
+		.last-pager,
+		.first-pager{
+		    color: #DDD;
+		}
+
+		.cur,
+		.last-pager,
+		.first-pager{
+			&:hover{
+			    border-color: #DDD;
+			    color: #DDD;
+			}
+		}
+
+		.cur{			
+  			border: none;
+  			background: $themeColor;
+  			color: #fff !important;
+
+			&:hover{
+		    	color: #000;
+		    }
+
+			&:active{
+		    	background: $themeColor;
+		    }
+		}
+
+		div.disabled{
+			background: #eee;
+		  	border-color: #ddd !important;
+		  	color: #aaa !important;
+		  	cursor: default;
+		}
+
+		li.disabled{
+			border: none;
+		  	cursor: default;
+		}		
+	}
+
+	&:after {
+	  content: "";
+	  clear: both;
+	  width: 100%;
+	  display: block;
+	}
+
+	
+
+	.splitStr,
+	.splitStr:before,
+	.splitStr:after{
+		content: '';
+		position: absolute;
+		width: 2px;
+		height: 2px;    		
+		background: #aaa;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+	}
+
+	.splitStr{
+		left: 0;
+		right: 0;
+
+		&:before{
+			left: -8px;
+		}
+
+		&:after{
+			right: -8px;
+		}
+	}
+}
+

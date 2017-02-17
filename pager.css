@@ -1,0 +1,151 @@
+.pager {
+  height: 30px;
+  padding: 10px;
+  line-height: 30px;
+}
+.pager .pager-info {
+  float: left;
+}
+.pager .pager-jump {
+  display: inline-block;
+  line-height: 30px;
+}
+.pager .pager-jump input,
+.pager .pager-jump button {
+  outline: none;
+}
+.pager .pager-jump input {
+  width: 40px;
+  padding: 0;
+  height: 28px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+.pager .pager-jump button {
+  border: none;
+  height: 30px;
+  background: #27A9E3;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.pager-index-tip {
+  margin-right: 20px;
+}
+.pager .pager-list,
+.pager .pager-next,
+.pager .pager-prev {
+  float: right;
+}
+.pager .pager-list {
+  width: 520px;
+}
+.pager .pager-list ul {
+  margin-left: 5px;
+  float: right;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 5px;
+}
+.pager .pager-list ul:after {
+  content: "";
+  clear: both;
+  width: 100%;
+  display: block;
+}
+.pager .pager-list li,
+.pager .pager-list .pager-next,
+.pager .pager-list .pager-prev {
+  width: 80px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+}
+.pager .pager-list li:hover,
+.pager .pager-list .pager-next:hover,
+.pager .pager-list .pager-prev:hover {
+  border-color: #27A9E3;
+  color: #27A9E3;
+}
+.pager .pager-list li:active,
+.pager .pager-list .pager-next:active,
+.pager .pager-list .pager-prev:active {
+  background: #fafafa;
+}
+.pager .pager-list .pager-next.disabled:active,
+.pager .pager-list .pager-prev.disabled:active {
+  background: #eee;
+}
+.pager .pager-list li {
+  float: left;
+  margin-right: 5px;
+  width: 32px;
+  position: relative;
+}
+.pager .pager-list li.disabled:active {
+  background: none;
+}
+.pager .pager-list .last-pager,
+.pager .pager-list .first-pager {
+  color: #DDD;
+}
+.pager .pager-list .cur:hover,
+.pager .pager-list .last-pager:hover,
+.pager .pager-list .first-pager:hover {
+  border-color: #DDD;
+  color: #DDD;
+}
+.pager .pager-list .cur {
+  border: none;
+  background: #27A9E3;
+  color: #fff !important;
+}
+.pager .pager-list .cur:hover {
+  color: #000;
+}
+.pager .pager-list .cur:active {
+  background: #27A9E3;
+}
+.pager .pager-list div.disabled {
+  background: #eee;
+  border-color: #ddd !important;
+  color: #aaa !important;
+  cursor: default;
+}
+.pager .pager-list li.disabled {
+  border: none;
+  cursor: default;
+}
+.pager:after {
+  content: "";
+  clear: both;
+  width: 100%;
+  display: block;
+}
+.pager .splitStr,
+.pager .splitStr:before,
+.pager .splitStr:after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #aaa;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.pager .splitStr {
+  left: 0;
+  right: 0;
+}
+.pager .splitStr:before {
+  left: -8px;
+}
+.pager .splitStr:after {
+  right: -8px;
+}

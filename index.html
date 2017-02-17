@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pager</title>
+    <link rel="stylesheet" href="pager.css">
+
+</head>
+<body>
+    <div pager class="pager" ></div>
+    <script type="text/javascript" src="./Pager.js"></script>
+
+    <script>
+
+    	//setTimeout(function(){
+	    	$.Pager.init({
+	    		total: 60,
+	    		showJump: true,
+                onJump: function(){
+                    console.log(123)
+                }
+	    	});
+    	//}, 2000);
+
+
+    </script>
+</body>
+</html>
