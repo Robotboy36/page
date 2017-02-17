@@ -8,7 +8,7 @@
 `$.Pager.init( option );`
 
 option 为参数
-
+>
   option = {
   	el //页码容器
   	curPage  // 当前页， 默认1
@@ -18,3 +18,4 @@ option 为参数
   	showJump  // 是否显示跳转按钮， 默认 false
   	onJump  // 当页码切换时的回调函数， 带有参 page
   }
+>
